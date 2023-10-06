@@ -415,7 +415,7 @@ footer ul {
     position: fixed;
     display: block;
     left: -100%;
-    top: 5%;
+    top: 1.5rem;
     flex-direction: column;
     background: rgba(3, 3, 3, 0.663);
     color: var(--fontcolor2);
