@@ -429,6 +429,23 @@ footer ul {
     left: 0;
   }
 
+  nav li {
+    transition: none;
+  }
+
+  nav li::before {
+    width: 0;
+    transition: none;
+  }
+
+  nav li:hover::before {
+    width: 0;
+  }
+
+  nav li:hover {
+    color: inherit;
+  }
+
   .icon-part-container {
     display: block;
   }
