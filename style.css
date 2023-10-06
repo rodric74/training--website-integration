@@ -360,6 +360,98 @@ footer h3 {
 footer ul {
   display: flex;
   justify-content: space-around;
-  min-width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 895px) {
+  nav li {
+    font-size: 0.7rem;
+  }
+
+  .main-header img {
+    width: 60%;
+  }
+
+  .contact-list .list {
+    padding-left: 15px;
+  }
+
+  .medias-logos img {
+    width: 40px;
+  }
+
+  footer ul {
+    flex-wrap: wrap;
+  }
+
+  footer li {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  nav li {
+    display: none;
+  }
+  .icon-part-container {
+    display: block;
+  }
+
+  .icon-part {
+    padding: 0 0 30px;
+  }
+
+  .list-icon-part {
+    margin-top: 35px;
+  }
+  .header-news {
+    display: block;
+  }
+
+  .left-part {
+    width: 100%;
+  }
+
+  .left-part h2 {
+    text-align: center;
+  }
+
+  .left-part p {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .main-news-container {
+    display: block;
+  }
+
+  .main-news-container div {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    margin-top: 58px;
+  }
+
+  .mn-pic img {
+    width: 70%;
+  }
+
+  .contact {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .main-header img {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .main-header button {
+    font-size: 0.6rem;
+  }
 }
