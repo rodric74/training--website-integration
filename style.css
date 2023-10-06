@@ -95,12 +95,7 @@ nav li:last-child:before {
 }
 
 #icons {
-  cursor: pointer;
-  color: var(--fontcolor1);
-  font-size: 2rem;
   display: none;
-  text-align: right;
-  margin-right: 20px;
 }
 
 .main-header {
@@ -402,17 +397,23 @@ footer ul {
 @media screen and (max-width: 715px) {
   #icons {
     display: block;
+    cursor: pointer;
+    color: var(--fontcolor1);
+    font-size: 1.3rem;
+    text-align: right;
+    margin-right: 20px;
   }
   #icons:before {
     content: "\2630";
   }
   .active #icons:before {
     content: "\2715";
+    font-size: 0.9rem;
   }
 
   nav ul {
     position: fixed;
-    /* left: -100%; */
+    left: -100%;
     top: 5%;
     flex-direction: column;
     background: rgba(3, 3, 3, 0.663);
@@ -424,7 +425,7 @@ footer ul {
     /* height: 100vh; */
   }
 
-  nav.avtive ul {
+  nav.active ul {
     left: 0;
   }
 
