@@ -94,6 +94,15 @@ nav li:last-child:before {
   font-weight: 500;
 }
 
+#icons {
+  cursor: pointer;
+  color: var(--fontcolor1);
+  font-size: 2rem;
+  display: none;
+  text-align: right;
+  margin-right: 20px;
+}
+
 .main-header {
   background: url(./assets/img/bg.jpg) fixed center/cover;
   color: var(--fontcolor2);
@@ -391,9 +400,34 @@ footer ul {
 }
 
 @media screen and (max-width: 715px) {
-  nav li {
-    display: none;
+  #icons {
+    display: block;
   }
+  #icons:before {
+    content: "\2630";
+  }
+  .active #icons:before {
+    content: "\2715";
+  }
+
+  nav ul {
+    position: fixed;
+    /* left: -100%; */
+    top: 5%;
+    flex-direction: column;
+    background: rgba(3, 3, 3, 0.663);
+    color: var(--fontcolor2);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding-bottom: 20px;
+    /* height: 100vh; */
+  }
+
+  nav.avtive ul {
+    left: 0;
+  }
+
   .icon-part-container {
     display: block;
   }
