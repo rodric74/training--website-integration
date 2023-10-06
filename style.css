@@ -413,6 +413,7 @@ footer ul {
 
   nav ul {
     position: fixed;
+    display: block;
     left: -100%;
     top: 5%;
     flex-direction: column;
